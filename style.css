@@ -1,0 +1,68 @@
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: -o-linear-gradient(rgb(29, 20, 7), wheat);
+    background-color: rgb(255, 244, 221);
+}
+.text-input{
+    background-color: whitesmoke;
+    margin-top: 5em;
+    height: 100px;
+    width: 500px;
+    border-width: 5px;
+    border-color: cornflowerblue;
+    border-radius: 10px;
+    border-style:inset;
+    font-size: 14px;
+}
+#evaluate{
+    margin-top: 10px;
+    height: 40px;
+    width: 100px;
+    background-color: cadetblue;
+    font-size: large;
+    font-weight: 600;
+    border-radius: 10px;
+    border-width: 3px;
+
+}
+.evaluated{
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+    width: 500px;
+    padding-left: 5px;
+    padding-bottom: 10px;
+    background-color: rgb(253, 239, 155);
+    border-style: double;
+    border-radius: 10px;
+    font-weight: 600;
+    font-size: 20px;
+    
+}
+.grade{
+    display: flex;
+    align-self: center;
+    margin-block-start: 10px;
+    margin-block-end:0;
+    font-size: 30px;
+}
+#loading{
+    position: absolute;
+    margin-top: 300px;
+    border: 8px solid #f3f3f3;
+    border-top: 8px solid #3498db; 
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    animation: spin 2s linear infinite;
+    visibility: hidden;
+}
+#loading.display{
+    visibility: visible;
+}
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
